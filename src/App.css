@@ -1,38 +1,181 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .App {
-  text-align: center;
+  background-color: rgba(236, 243, 241, 0.5);
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-color: transparent;
+  margin-left: 0px;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+}
+.list{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.chek{
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  background: #e8e9ce;
+}
+h2, h1, p{
+  font-family: 'Montserrat', sans-serif;
+  color: #414140;
+}
+ul {
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  display: block;
+  padding: .4em .4em .4em .8em;
+  margin: .5em 0 .5em 2.5em;
+}
+li:hover{
+  background: #f7f7e4;
+}
+button {
+  background: #e8e9ce;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.tasty{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.par{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  background: #cecfb7;
+}
+.form-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-inline button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: rgb(216, 214, 214);
+}
+
+/* контейнер всех карточек */
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* сетка карточек */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* карточка */
+.card {
+  background: rgb(214, 208, 208);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(87, 85, 85, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* картинка */
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* контент */
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #414140;
+}
+
+.card-calories {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #848f7a;
+}
+
+.card-list {
+  font-size: 14px;
+  color: #555;
+}
+.card {
+  position: relative; /* обязательно для кнопки */
+}
+
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+@media (max-width: 600px) {
+  .form-inline {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-inline button {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
   }
 }
