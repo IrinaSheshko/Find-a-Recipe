@@ -26,4 +26,4 @@
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone [https://irinasheshko.github.io/Find-a-Recipe/](https://github.com/IrinaSheshko/Find-a-Recipe.git)
+   git clone [https://github.com/IrinaSheshko/Find-a-Recipe.git](https://github.com/IrinaSheshko/Find-a-Recipe.git)
