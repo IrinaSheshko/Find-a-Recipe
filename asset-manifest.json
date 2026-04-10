@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Find-a-Recipe/static/css/main.0a91adde.css",
+    "main.js": "/Find-a-Recipe/static/js/main.987a7e26.js",
+    "static/js/453.18d03e6e.chunk.js": "/Find-a-Recipe/static/js/453.18d03e6e.chunk.js",
+    "static/media/Avocado.mp4": "/Find-a-Recipe/static/media/Avocado.1d17c1f7be0417aeab02.mp4",
+    "index.html": "/Find-a-Recipe/index.html",
+    "main.0a91adde.css.map": "/Find-a-Recipe/static/css/main.0a91adde.css.map",
+    "main.987a7e26.js.map": "/Find-a-Recipe/static/js/main.987a7e26.js.map",
+    "453.18d03e6e.chunk.js.map": "/Find-a-Recipe/static/js/453.18d03e6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a91adde.css",
+    "static/js/main.987a7e26.js"
+  ]
+}
